@@ -10,7 +10,7 @@ MacOS Big Sur 11.5.2, Unity 2020.3.18f1, Visual Studio Code 1.63.2)
 WebGL 960x600
 
 ### Visuals: 
-<img src="./Visuals/Visuals.gif" width="150"> 
+<img src="./Assets/MyGame/Visuals/Visual.gif" width="150"> 
 
 
 ### Third party material: 
