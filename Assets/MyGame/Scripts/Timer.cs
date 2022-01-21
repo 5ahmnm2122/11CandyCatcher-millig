@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System.Net.Mime;
+using System.Net.Http.Headers;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +11,8 @@ public class Timer : MonoBehaviour
     public float timeRemaining = 30;
     public bool timerIsRunning = false;
     public Text timeText;
+
+    public PlayerData transfer;
 
     private void Start()
     {
@@ -29,6 +33,7 @@ public class Timer : MonoBehaviour
                 Debug.Log("Die Zeit ist vorbei");
                 timeRemaining = 0;
                 timerIsRunning = false;
+
                 SceneManager.LoadScene("EndScene");
             }
         }

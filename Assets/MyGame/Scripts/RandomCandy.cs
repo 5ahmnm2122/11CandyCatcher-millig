@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RandomCandy : MonoBehaviour
 {
@@ -10,14 +11,29 @@ public class RandomCandy : MonoBehaviour
     [SerializeField] float minTras;
     [SerializeField] float maxTras;
 
+    public PlayerData transfer;
+    public Text nameText;
+    public Text scoreText;
+    public int myScore;
+
 
 
 
     void Start()
     {
+        nameText.text = transfer.playerName;
         StartCoroutine(CandySpawn());
+        myScore = transfer.score;
+
 
     }
+
+    private void Update()
+    {
+        scoreText.text = "Score: " + myScore;
+        transfer.score = myScore;
+    }
+
 
     IEnumerator CandySpawn()
     {
@@ -33,10 +49,5 @@ public class RandomCandy : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Object.Destroy(this.gameObject);
-
-    }
 
 }
