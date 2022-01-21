@@ -351,7 +351,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44d6cee5b65864347afaf4d4f0bf1c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovementSpeed: 6
+  speed: 6
+  controller: {fileID: 724079658}
+  score: 0
+  scoreText: {fileID: 355778727}
 --- !u!1 &251248356
 GameObject:
   m_ObjectHideFlags: 0
@@ -502,8 +505,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Score: '
 --- !u!222 &355778728
@@ -649,9 +652,13 @@ MonoBehaviour:
   candyPrefab:
   - {fileID: 4140720170211113510, guid: 8fe712950070b4b40be7859e5c37376e, type: 3}
   - {fileID: 8716657948888608477, guid: a1fe32dea11ed465eae0b0848ef6468b, type: 3}
-  secondSpawn: 2
+  secondSpawn: 0.5
   minTras: -7
   maxTras: 7
+  score: 0
+  scoreText: {fileID: 355778727}
+  transfer: {fileID: 11400000, guid: 40988b8447353475cba85a259c2edea8, type: 2}
+  nameText: {fileID: 1508579351}
 --- !u!4 &724079659
 Transform:
   m_ObjectHideFlags: 0
@@ -698,6 +705,8 @@ MonoBehaviour:
   timeRemaining: 30
   timerIsRunning: 0
   timeText: {fileID: 1832681573}
+  score: 0
+  transfer: {fileID: 11400000, guid: 40988b8447353475cba85a259c2edea8, type: 2}
 --- !u!4 &1088012021
 Transform:
   m_ObjectHideFlags: 0
@@ -779,8 +788,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Player Name
 --- !u!222 &1508579352
@@ -999,8 +1008,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: Timer
 --- !u!222 &1832681574

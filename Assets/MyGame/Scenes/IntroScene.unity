@@ -777,6 +777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217d16ad9792a46e1af52ba0f6a946e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  transfer: {fileID: 11400000, guid: 40988b8447353475cba85a259c2edea8, type: 2}
+  playerName: {fileID: 699504588}
 --- !u!4 &714302906
 Transform:
   m_ObjectHideFlags: 0
