@@ -1,5 +1,8 @@
 # Candy Catcher
 
+### Github Pages
+https://5ahmnm2122.github.io/11CandyCatcher-millig/
+
 ### Project description: 
 In the IntroScene you can fill in your name and then click on a button to switch into the MainScene. Your name is displayed at the top left corner. You have to move the player to the left or right side to pick up candy, but try to avoid the leaves. Your score will be shown at the top. There is also a timer of 30 sec. If the time is over you switch to the EndScene, where you can see your name and score. You can also restart the game if you want.
 
